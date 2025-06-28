@@ -1,0 +1,78 @@
+:root {
+  --bg-color: hsl(0, 0%, 100%);
+  --bg-dark-blue: hsl(227.37deg 46.91% 31.76%);
+  --bg-grey: hsl(222, 38%, 95%);
+  --bg-yellow: hsl(42.95deg 100% 65.49%);
+  --bg-light-blue: hsl(209.65deg 59.44% 71.96%);
+  --bg-orange: hsl(26.5deg 96.77% 75.69%);
+  --bg-green: hsl(150, 51%, 70%);
+  --text-orange: hsl(24, 100%, 10%);
+  --text-light-blue: hsl(210, 59%, 10%);
+  --text-grey: hsl(222, 38%, 10%);
+  --text-yellow: hsl(41, 100%, 10%);
+  --text-dark-blue: hsl(216, 47%, 100%);
+  --text-green: hsl(150, 51%, 10%);
+}
+
+* {
+  font-family: "Work Sans", sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: "Libre Baskerville", serif;
+}
+
+blockquote::before { content: "“"; }
+blockquote::after  { content: "”"; }
+
+p {
+  margin: 0;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 12px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+

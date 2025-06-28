@@ -1,0 +1,239 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 250px);
+  gap: 10px;
+  width: 100%;
+}
+
+.grid-box {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.grid-box img {
+  height: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.grid-box:hover img {
+  scale: 1.04;
+}
+
+.creative {
+  grid-column: span 4;
+  background-color: var(--bg-dark-blue);
+  color: var(--text-dark-blue);
+}
+
+.creative .text {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  text-align: left;
+  width: 197px;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.creative .image {
+  position: absolute;
+  bottom: -5px;
+  right: 5px;
+}
+
+.skills {
+  grid-column: span 4;
+  grid-row: span 2;
+  background-color: var(--bg-grey);
+  color: var(--text-grey);
+}
+
+.skills .text {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  text-align: left;
+  width: 197px;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.skills .image {
+  position: absolute;
+  bottom: -7px;
+  right: 0;
+}
+
+.art {
+  grid-column: span 4;
+  grid-row: span 2;
+  background-color: var(--bg-yellow);
+  color: var(--text-yellow);
+}
+
+.art .text {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  text-align: left;
+  width: 197px;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.art .image {
+  position: absolute;
+  bottom: -7px;
+  right: 0;
+}
+
+.parental {
+  grid-column: span 4;
+  grid-row: span 1;
+  background-color: var(--bg-light-blue);
+  color: var(--text-light-blue);
+}
+
+.parental .text {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  text-align: left;
+  width: 197px;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.parental .image {
+  position: absolute;
+  top: 0;
+  right: -10px;
+}
+
+.environment {
+  grid-column: span 3;
+  grid-row: span 1;
+  background-color: var(--bg-green);
+  color: var(--text-green);
+}
+
+.environment .text {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  text-align: left;
+  width: 197px;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.environment .image {
+  position: absolute;
+  bottom: -7px;
+  right: 0;
+}
+
+.social {
+  grid-column: span 5;
+  grid-row: span 1;
+  background-color: var(--bg-orange);
+  color: var(--text-orange);
+}
+
+.social .text {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  text-align: left;
+  width: 197px;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.social .image {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+}
+
+@media (max-width: 991px) {
+  .creative img {
+    width: 150px;
+  }
+
+  .skills .text {
+    top: 24px;
+  }
+  .skills img {
+    width: 200px;
+  }
+
+  .parental img {
+    width: 190px;
+  }
+
+  .environment {
+    grid-column: span 4;
+  }
+
+  .social {
+    grid-column: span 4;
+  }
+  .social img {
+    width: 160px;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid-container {
+    grid-template-rows: repeat(6, 250px);
+  }
+  .grid-container > * {
+    grid-column: span 8;
+    grid-row: span 1;
+  }
+
+  .grid-container .text {
+    top: unset;
+    bottom: 24px;
+  }
+
+  .creative img {
+    width: 150px;
+  }
+
+  .skills img {
+    width: 140px;
+  }
+
+  .art img {
+    width: 150px;
+  }
+
+  .parental img {
+    width: 190px;
+  }
+
+  .environment .text {
+    top: 24px !important;
+  }
+  .environment img {
+    width: 220px;
+  }
+
+  .social .text {
+    top: 24px !important;
+  }
+
+  .social img {
+    width: 200px;
+  }
+}

@@ -1,0 +1,10 @@
+.divider {
+  width: 100%;
+  margin: 24px 0;
+  text-align: center;
+}
+
+.divider img {
+  height: 100px;
+  opacity: 0.8;
+}

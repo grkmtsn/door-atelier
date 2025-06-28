@@ -1,0 +1,74 @@
+.me-wrapper h2 {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.me-wrapper .me-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.me-wrapper .me-content section p {
+  flex: 1;
+  margin-bottom: 1.5em;
+  text-indent: 2em;
+  font-size: 16px;
+  letter-spacing: -0.003em;
+  line-height: 32px;
+  word-break: break-word;
+  color: #242424;
+}
+
+.me-wrapper .me-content section .me-footer {
+  text-align: right;
+  font-style: italic;
+  text-indent: 0 !important;
+}
+
+.avatar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffca0d;
+  border-radius: 10px;
+  margin-top: 24px;
+}
+
+.avatar .motto {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+.avatar .motto p {
+  font-size: 14px;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+  text-align: right;
+}
+
+.avatar img {
+  z-index: 1;
+  width: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 500px) {
+  .avatar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .avatar .motto {
+    margin-bottom: 24px;
+  }
+
+  .avatar .motto blockquote {
+    text-align: center;
+  }
+
+  .avatar .motto p {
+    text-align: center;
+  }
+}
