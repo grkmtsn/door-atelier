@@ -1,0 +1,22 @@
+@layer reset, base, utilities;
+
+@layer reset {
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; }
+}
+
+@layer base {
+  :root {
+    --space-6: 1.5rem;
+    --space-16: 4rem;
+    --text: #1e1e1e;
+    --bg: #fff;
+  }
+
+  body { font: 16px/1.5 system-ui, sans-serif; }
+  .u-bg { background: var(--bg); }
+  .u-text { color: var(--text); }
+  .container { width: min(100% - 2rem, 1100px); margin-inline: auto; }
+  .u-py-6 { padding-block: var(--space-6); }
+  .u-py-16 { padding-block: var(--space-16); }
+}
