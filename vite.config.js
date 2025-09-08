@@ -1,11 +1,15 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  root: 'src',
+  server: {
+    open: "/index.html",
+    watch: {
+      usePolling: true,
+    }
+  },
   build: {
-    outDir: '../dist',
+    outDir: "../dist",
+    emptyOutDir: true
   },
-  css: {
-    postcss: './postcss.config.cjs',
-  },
+  root: "src",
 });
