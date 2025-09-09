@@ -385,6 +385,7 @@
     background-color: #ffca0d;
     border-radius: 10px;
     margin-top: 24px;
+    padding-right: 32px;
   }
 
   .avatar .motto {
@@ -395,7 +396,7 @@
 
   .avatar .motto blockquote {
     font-family: "LibreBaskerville";
-
+    margin: 24px;
   }
 
   .avatar .motto p {
@@ -410,6 +411,47 @@
     width: 240px;
     object-fit: cover;
     display: block;
+  }
+
+  .footer-wrapper {
+    background-color: var(--bg-grey);
+    margin-top: 72px;
+    padding: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    animation: reveal-down 0.6s ease-out forwards var(--delay);
+  }
+
+  .footer-wrapper .logo {
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  .footer-wrapper .body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .footer-wrapper .description {
+    max-width: 420px;
+    text-align: center;
+  }
+
+  .footer-wrapper .social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .footer-wrapper .copy-right {
+    font-size: 12px;
+    font-style: italic;
   }
 
   @media (max-width: 991px) {

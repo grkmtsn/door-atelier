@@ -130,11 +130,32 @@
           </video>
         </div>
       </div>
-      <div class="divider">
-        <img src="/assets/divider.png" />
-      </div>
     </div>
+    <footer class='footer-wrapper' style="--delay: 1.8s">
+      <div class="logo">
+        <img width="180" alt="Door Atelier" src="/assets/black_text_logo.svg" />
+      </div>
+      <div class="body">
+        <div class="description">
+          <p>Multilingual, artful play events for babies and toddlers. Inspiring curiosity and creativity in a safe
+            environment.</p>
+        </div>
+        <div class="social-media">
+          <a href="https://www.instagram.com/dooratelier/" target="_blank">
+            <img width="28" src="/assets/instagram.png" alt="Instagram" />
+          </a>
+          <a href="https://www.facebook.com/dooratelier" target="_blank">
+            <img width="28" src="/assets/facebook.png" alt="Facebook" />
+          </a>
+        </div>
+        <div class="copy-right">
+          <p>© <span id="year"></span> Door Atelier — All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   </main>
 </body>
-
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </html>
